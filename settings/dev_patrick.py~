@@ -1,0 +1,14 @@
+# -*- encoding: utf-8 -*-
+from .local import *
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'test_alphaee_couk_patrick',
+        'USER': 'patrick',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+    }
+}

@@ -1,0 +1,5 @@
+-r base.txt
+kb-base==0.1.37
+kb-block==0.1.22
+kb-cms==0.0.16
+kb-login==0.1.27
