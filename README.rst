@@ -32,7 +32,7 @@ Usage
 
 ::
 
-  init_dev.sh
+  ./init_dev.sh
 
 Release and Deploy
 ==================
