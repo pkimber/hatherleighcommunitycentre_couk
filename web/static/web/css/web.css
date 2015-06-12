@@ -75,3 +75,8 @@ a:visited {
     padding: 0.5em 5;
     background: #87C995;
 }
+
+.pure-button {
+    color: #FAFFB8;
+    background-color: #2F3E42;
+}
