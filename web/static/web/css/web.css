@@ -1,0 +1,77 @@
+/*
+Colour scheme from:;
+http://www.colourlovers.com/palette/1222711/I_eat_only_palettes
+*/
+
+body {
+    background: #87C995;
+    color: #2F3E42;
+    margin: 0em 0 1em;
+}
+
+a {
+    color: #FAFFB8; /* block-background-text-normal */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FAFFB8; /* block-normal-text-normal */
+}
+
+.header {
+    border-bottom: 1px solid #2F3E42;
+}
+
+    .header h1 {
+            color: #2F3E42;
+            padding: 0.2em;
+    }
+
+ #menu {
+	background: #478F7F;
+}
+	/*
+    All anchors inside the menu should be styled like this.
+    */
+	#menu a {
+	        color: #2F3E42;
+	}
+
+    /*
+    Change color of the anchor links on hover/focus.
+    */
+    #menu .pure-menu li a:hover,
+    #menu .pure-menu li a:focus {
+        background: #39E6AC;
+    }
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected,
+    #menu .pure-menu-heading {
+        background: #2F3E42;
+    }
+
+    /*
+    This styles a link within a selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected a {
+        color: #FAFFB8;
+    }
+
+    /*
+    This styles the menu heading.
+    */
+    #menu .pure-menu-heading {
+        color: #FAFFB8;
+    }
+
+/*
+ * Footer Module Styles
+ */
+.legal {
+    border-top: 1px solid #2F3E42;
+    padding: 0.5em 5;
+    background: #87C995;
+}
