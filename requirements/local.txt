@@ -14,3 +14,4 @@ pytest-django
 pytest-flakes
 pytest-pep8
 walkdir
+django-debug-toolbar
