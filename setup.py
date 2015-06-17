@@ -19,7 +19,7 @@ def get_readme():
 
 
 setup(
-    name='kb-alphaee-couk',
+    name='kb-hatherleighcommunitycentre-couk',
     packages=['project', 'project.management', 'project.management.commands', 'web', 'dash', 'settings'],
     package_data={
         'project': [
@@ -31,6 +31,10 @@ setup(
         ],
 
         'web': [
+            'static/*.*',
+            'static/web/*.*',
+            'static/web/css/*.*',
+            'static/web/img/*.*',
             'templates/*.*',
             'templates/web/*.*',
         ],
@@ -40,11 +44,11 @@ setup(
             'templates/dash/*.*',
         ],
     },
-    version='0.0.12',
-    description='AlphaEE',
+    version='0.0.02',
+    description='Hatherleigh Community Centre',
     author='Patrick Kimber',
     author_email='code@pkimber.net',
-    url='ssh://git@bitbucket.org/pkimber/hatherleighcommunitycentre_couk.git',
+    url='git@github.com:pkimber/hatherleighcommunitycentre_couk.git',
     classifiers=[
         'Development Status :: 1 - Planning',
         'Environment :: Console',
