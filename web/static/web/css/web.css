@@ -3,6 +3,10 @@ Colour scheme from:;
 http://www.colourlovers.com/palette/1222711/I_eat_only_palettes
 */
 
+html {
+  overflow-y: scroll;
+}
+
 body {
     background: #87C995;
     color: #2F3E42;
