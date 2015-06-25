@@ -45,7 +45,7 @@ setup(
             'templates/project/*.*',
         ],
     },
-    version='0.0.07',
+    version='0.0.08',
     description='Hatherleigh Community Centre',
     author='Greg Bushell',
     author_email='greg@kbsoftware.co.uk',
