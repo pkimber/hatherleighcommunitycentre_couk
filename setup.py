@@ -38,13 +38,14 @@ setup(
 
         'project': [
             'static/*.*',
+            'static/ico/*.*',
             'static/img/*.*',
             'static/img/project/*.*',
             'templates/*.*',
             'templates/project/*.*',
         ],
     },
-    version='0.0.06',
+    version='0.0.07',
     description='Hatherleigh Community Centre',
     author='Greg Bushell',
     author_email='greg@kbsoftware.co.uk',
