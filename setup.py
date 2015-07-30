@@ -20,11 +20,15 @@ def get_readme():
 
 setup(
     name='kb-hatherleighcommunitycentre-couk',
-    packages=['settings', 'web', 'dash', 'project', 'project.management', 'project.management.commands'],
+    packages=['project', 'project.management', 'project.management.commands', 'web', 'dash', 'settings'],
     package_data={
-        'dash': [
+        'project': [
+            'static/*.*',
+            'static/ico/*.*',
+            'static/img/*.*',
+            'static/img/project/*.*',
             'templates/*.*',
-            'templates/dash/*.*',
+            'templates/project/*.*',
         ],
 
         'web': [
@@ -36,19 +40,15 @@ setup(
             'templates/web/*.*',
         ],
 
-        'project': [
-            'static/*.*',
-            'static/ico/*.*',
-            'static/img/*.*',
-            'static/img/project/*.*',
+        'dash': [
             'templates/*.*',
-            'templates/project/*.*',
+            'templates/dash/*.*',
         ],
     },
-    version='0.0.08',
+    version='0.0.09',
     description='Hatherleigh Community Centre',
-    author='Greg Bushell',
-    author_email='greg@kbsoftware.co.uk',
+    author='Patrick Kimber',
+    author_email='code@pkimber.net',
     url='git@github.com:pkimber/hatherleighcommunitycentre_couk.git',
     classifiers=[
         'Development Status :: 1 - Planning',
@@ -59,6 +59,7 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
+        'Framework :: Django :: 1.8',
         'Topic :: Office/Business :: Scheduling',
     ],
     long_description=get_readme(),
