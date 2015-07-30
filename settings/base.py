@@ -130,6 +130,7 @@ TEMPLATES = [
 ]
 
 MIDDLEWARE_CLASSES = (
+    'opbeat.contrib.django.middleware.OpbeatAPMMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -151,6 +152,7 @@ DJANGO_APPS = (
     'django.contrib.sessions',
     #'django.contrib.sites',
     'django.contrib.messages',
+    'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
@@ -162,6 +164,7 @@ THIRD_PARTY_APPS = (
     # 'django_extensions',
     'compressor',
     'easy_thumbnails',
+    'opbeat.contrib.django',
     'reversion',
 )
 
@@ -187,6 +190,12 @@ LOGIN_REDIRECT_URL = reverse_lazy('project.page.design', kwargs=dict(page='home'
 # must be logged in before accessing the view otherwise this URL
 # will be called.
 # LOGIN_URL = reverse_lazy('login.login')
+
+OPBEAT = {
+    'ORGANIZATION_ID': get_env_variable('OPBEAT_ORGANIZATION_ID'),
+    'APP_ID': get_env_variable('OPBEAT_APP_ID'),
+    'SECRET_TOKEN': get_env_variable('OPBEAT_SECRET_TOKEN'),
+}
 
 LOGGING = {
     'version': 1,

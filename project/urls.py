@@ -7,13 +7,29 @@ from django.conf.urls import (
 )
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.sitemaps import GenericSitemap
+
+from block.models import Page
 
 
 admin.autodiscover()
 
 
+info_dict = {
+  'queryset': Page.objects.pages(),
+  'date_field': 'modified',
+}
+
+sitemaps = {
+    'block': GenericSitemap(info_dict, priority=0.5, changefreq='monthly'),
+}
+
 urlpatterns = patterns(
     '',
+    url(regex=r'^sitemap\.xml$',
+        view='django.contrib.sitemaps.views.sitemap',
+        kwargs={'sitemaps': sitemaps},
+    ),
     url(regex=r'^',
         view=include('login.urls')
         ),
