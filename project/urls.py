@@ -36,18 +36,18 @@ urlpatterns = patterns(
     url(regex=r'^admin/',
         view=include(admin.site.urls)
         ),
-    url(regex=r'^cms/',
-        view=include('cms.urls.cms')
+    url(regex=r'^block/',
+        view=include('block.urls')
         ),
     url(regex=r'^compose/',
-        view=include('compose.urls')
+        view=include('compose.urls.compose')
         ),
     url(regex=r'^dash/',
         view=include('dash.urls')
         ),
     # this url include should come last
     url(regex=r'^',
-        view=include('cms.urls.page')
+        view=include('compose.urls.cms')
         ),
 )
 

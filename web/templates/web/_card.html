@@ -22,7 +22,7 @@
         <div class="pure-u-1-3">
           <div class="l-box">
             {% if b.picture %}
-              <img class="article-image-right pure-img" src="{% thumbnail b.picture 100x200 crop='smart' %}" />
+              <img class="article-image-right pure-img" src="{% thumbnail b.picture.image 100x200 crop='smart' %}" />
             {% endif %}
           </div>
         </div>
@@ -38,9 +38,9 @@
               {% block_moderate b %}
             {% endif %}
           </div>
-        </div>  
-      </div> 
-    </div>         
+        </div>
+      </div>
+    </div>
   {% endif %}
 {% endfor %}
 </div>

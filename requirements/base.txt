@@ -2,6 +2,7 @@ bleach==1.4
 celery==3.1.18
 django-braces==1.8.0
 django-compressor==1.5
+django-formtools==1.0
 django-redis==3.8.3
 django-reversion==1.8.7
 Django==1.8.3
