@@ -37,17 +37,17 @@ urlpatterns = patterns(
         view=include(admin.site.urls)
         ),
     url(regex=r'^block/',
-        view=include('block.urls')
+        view=include('block.urls.block')
         ),
     url(regex=r'^compose/',
-        view=include('compose.urls.compose')
+        view=include('compose.urls')
         ),
     url(regex=r'^dash/',
         view=include('dash.urls')
         ),
     # this url include should come last
     url(regex=r'^',
-        view=include('compose.urls.cms')
+        view=include('block.urls.cms')
         ),
 )
 
