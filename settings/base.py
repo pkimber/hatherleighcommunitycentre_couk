@@ -164,6 +164,7 @@ THIRD_PARTY_APPS = (
     # 'django_extensions',
     'compressor',
     'easy_thumbnails',
+    'formtools',
     'opbeat.contrib.django',
     'reversion',
 )

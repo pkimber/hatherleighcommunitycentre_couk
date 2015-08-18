@@ -36,8 +36,8 @@ urlpatterns = patterns(
     url(regex=r'^admin/',
         view=include(admin.site.urls)
         ),
-    url(regex=r'^cms/',
-        view=include('cms.urls.cms')
+    url(regex=r'^block/',
+        view=include('block.urls.block')
         ),
     url(regex=r'^compose/',
         view=include('compose.urls')
@@ -47,7 +47,7 @@ urlpatterns = patterns(
         ),
     # this url include should come last
     url(regex=r'^',
-        view=include('cms.urls.page')
+        view=include('block.urls.cms')
         ),
 )
 

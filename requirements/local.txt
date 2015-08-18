@@ -3,6 +3,7 @@
 -e ../../app/base
 -e ../../app/block
 -e ../../app/cms
+-e ../../app/compose
 -e ../../app/login
 -e ../../app/mail
 django-debug-toolbar
