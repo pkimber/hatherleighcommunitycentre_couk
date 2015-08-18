@@ -10,6 +10,12 @@ hatherleighcommunitycentre.co.uk
   # cms
   1043-convert-from-cms-models-to-block
 
+After deploy::
+
+  django-admin.py migrate --noinput
+  django-admin.py init_app_compose
+  # change the page template to 'compose/page_article.html'
+
 Development
 ===========
 
