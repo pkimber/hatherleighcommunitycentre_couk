@@ -40,7 +40,7 @@ urlpatterns = patterns(
         view=include('block.urls.block')
         ),
     url(regex=r'^compose/',
-        view=include('compose.urls')
+        view=include('compose.urls.compose')
         ),
     url(regex=r'^dash/',
         view=include('dash.urls')
