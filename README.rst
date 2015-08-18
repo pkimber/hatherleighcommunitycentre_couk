@@ -1,6 +1,15 @@
 hatherleighcommunitycentre.co.uk
 ********************************
 
+.. important:: To deploy this project, use the following branches:
+
+::
+
+  # block
+  git checkout 961-linking-wizard
+  # cms
+  1043-convert-from-cms-models-to-block
+
 Development
 ===========
 
