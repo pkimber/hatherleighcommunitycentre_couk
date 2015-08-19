@@ -35,9 +35,6 @@ setup(
             'static/*.*',
             'static/web/*.*',
             'static/web/css/*.*',
-            'static/web/img/*.*',
-            'templates/*.*',
-            'templates/web/*.*',
         ],
 
         'dash': [
@@ -45,7 +42,7 @@ setup(
             'templates/dash/*.*',
         ],
     },
-    version='0.0.10',
+    version='0.0.11',
     description='Hatherleigh Community Centre',
     author='Patrick Kimber',
     author_email='code@pkimber.net',
