@@ -8,10 +8,10 @@ module.exports = function(grunt) {
     this.app = appName || appConfig.name;
 
     return {
-      base: '../../app/base/base/static/',
+      base: '../../app/base/base/static/base/css/',
       bootstrap: this.app + 'bootstrap/',
-      css: this.app + 'project/css/',
-      js: this.app + 'project/js/',
+      css: this.app + 'web/css/',
+      js: this.app + 'web/js/',
       fonts: this.app + 'project/fonts/',
       plugin: this.app + 'plugin/'
     };
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // call function pathsConfig passing over the project/static path to prefix
     // assign appConfig to variable pkg for use below
-    paths: pathsConfig('project/static/'),
+    paths: pathsConfig('web/static/'),
     pkg: appConfig,
 
     // this will copy font files from base+plugin to local projects fonts folder
@@ -57,9 +57,8 @@ module.exports = function(grunt) {
         src: [
           '<%= paths.bootstrap %>css/bootstrap.min.css',
           '<%= paths.base %>plugin/font-awesome/css/font-awesome.min.css',
-          '<%= paths.css %>style.css',
           '<%= paths.plugin %>owl-carousel/css/owl.carousel.css',
-          '<%= paths.css %>custom.css'
+          '<%= paths.css %>web.css'
         ],
         dest: '<%= paths.css %>project.css'
       },
@@ -99,7 +98,7 @@ module.exports = function(grunt) {
         // options: { livereload: true },
         files: [
           'Gruntfile.js',
-          '<%= paths.css %>custom.css',
+          '<%= paths.css %>web.css',
           '<%= paths.js %>custom.js'
         ],
         tasks: [
