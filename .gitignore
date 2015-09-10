@@ -51,6 +51,7 @@ logfile.8
 logfile.9
 media
 media-private
+node_modules
 temp.db
 
 # private info
