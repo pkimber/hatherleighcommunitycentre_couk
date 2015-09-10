@@ -1,6 +1,7 @@
 /*
-Colour scheme from:;
+Original colour scheme from:;
 http://www.colourlovers.com/palette/1222711/I_eat_only_palettes
+25/8/15 - changed background to #FFFFee, font to #2e3d40 etc.
 */
 
 html {
@@ -8,37 +9,37 @@ html {
 }
 
 body {
-    background: #87C995;
-    color: #2F3E42;
+    background: #FFFFee;
+    color: #2e3d40;
     margin: 0em 0 1em;
 }
 
 a {
-    color: #FAFFB8; /* block-background-text-normal */
+    color: #2e3d40; /* block-background-text-normal */
     text-decoration: none;
 }
 
 a:visited {
-    color: #FAFFB8; /* block-normal-text-normal */
+    color: #171e20; /* block-normal-text-normal */
 }
 
 .header {
-    border-bottom: 1px solid #2F3E42;
+    border-bottom: 1px solid #2e3d40;
 }
 
     .header h1 {
-            color: #2F3E42;
+            color: #2e3d40;
             padding: 0.2em;
     }
 
  #menu {
-	background: #478F7F;
+	background: #1eb896;
 }
 	/*
     All anchors inside the menu should be styled like this.
     */
 	#menu a {
-	        color: #2F3E42;
+	        color: #2e3d40;
 	}
 
     /*
@@ -54,33 +55,34 @@ a:visited {
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #2F3E42;
+        background: #2e3d40;
     }
 
     /*
     This styles a link within a selected menu item `<li>`.
     */
     #menu .pure-menu-selected a {
-        color: #FAFFB8;
+        color: #FFFFee;
     }
 
     /*
     This styles the menu heading.
     */
     #menu .pure-menu-heading {
-        color: #FAFFB8;
+        background: #2e3d40;
+        color: #FFFFee;
     }
 
 /*
  * Footer Module Styles
  */
 .legal {
-    border-top: 1px solid #2F3E42;
+    border-top: 1px solid #2e3d40;
     padding: 0.5em 5;
-    background: #87C995;
+    background: #FFFFee;
 }
 
 .pure-button {
-    color: #FAFFB8;
-    background-color: #2F3E42;
+    color: #2e3d40;
+    background-color: #1eb896;
 }
