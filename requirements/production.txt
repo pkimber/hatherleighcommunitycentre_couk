@@ -1,7 +1,7 @@
 -r base.txt
-kb-base==0.1.64
-kb-block==0.1.39
+kb-base==0.1.65
+kb-block==0.1.40
 kb-cms==0.0.28
-kb-compose==0.0.10
+kb-compose==0.0.12
 kb-login==0.1.35
 kb-mail==0.1.26
