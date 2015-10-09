@@ -2,6 +2,6 @@
 kb-base==0.1.69
 kb-block==0.1.41
 kb-cms==0.0.28
-kb-compose==0.0.12
+kb-compose==0.0.14
 kb-login==0.1.35
 kb-mail==0.1.28
