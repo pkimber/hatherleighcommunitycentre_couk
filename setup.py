@@ -20,8 +20,20 @@ def get_readme():
 
 setup(
     name='kb-hatherleighcommunitycentre-couk',
-    packages=['project', 'project.management', 'project.management.commands', 'web', 'dash', 'settings'],
+    packages=['settings', 'web', 'dash', 'project', 'project.management', 'project.management.commands'],
     package_data={
+        'dash': [
+            'templates/*.*',
+            'templates/dash/*.*',
+        ],
+
+        'web': [
+            'static/*.*',
+            'static/web/*.*',
+            'static/web/css/*.*',
+            'static/web/img/*.*',
+        ],
+
         'project': [
             'static/*.*',
             'static/ico/*.*',
@@ -33,22 +45,11 @@ setup(
             'templates/*.*',
             'templates/project/*.*',
         ],
-
-        'web': [
-            'static/*.*',
-            'static/web/*.*',
-            'static/web/css/*.*',
-        ],
-
-        'dash': [
-            'templates/*.*',
-            'templates/dash/*.*',
-        ],
     },
-    version='0.0.12',
+    version='0.0.13',
     description='Hatherleigh Community Centre',
-    author='Patrick Kimber',
-    author_email='code@pkimber.net',
+    author='Greg Bushell',
+    author_email='greg@kbsoftware.co.uk',
     url='git@github.com:pkimber/hatherleighcommunitycentre_couk.git',
     classifiers=[
         'Development Status :: 1 - Planning',
