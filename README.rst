@@ -5,14 +5,19 @@ hatherleighcommunitycentre.co.uk
 
 ::
 
+  # base
+  1136-delete-image-from-library
+  # block
+  1136-delete-image-from-library
   # cms
   1043-convert-from-cms-models-to-block
+  # compose
+  1136-delete-image-from-library
 
 After deploy::
 
   django-admin.py migrate --noinput
   django-admin.py init_app_compose
-  # change the page template to 'compose/page_article.html'
 
 Development
 ===========

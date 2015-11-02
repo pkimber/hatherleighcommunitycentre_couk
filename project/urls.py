@@ -45,6 +45,9 @@ urlpatterns = patterns(
     url(regex=r'^dash/',
         view=include('dash.urls')
         ),
+    url(regex=r'^wizard/',
+        view=include('block.urls.wizard')
+        ),
     # this url include should come last
     url(regex=r'^',
         view=include('block.urls.cms')
