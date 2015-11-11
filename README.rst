@@ -1,18 +1,10 @@
 hatherleighcommunitycentre.co.uk
 ********************************
 
-.. important:: To deploy this project, use the following branches:
-
-::
-
-  # base
-  1136-delete-image-from-library
-  # block
-  1136-delete-image-from-library
-  # cms
-  1043-convert-from-cms-models-to-block
-  # compose
-  1136-delete-image-from-library
+.. important:: To deploy this project, use the branches listed in
+               ``requirements/branch.txt``.  Use
+               https://github.com/mdinsmore/dev-scripts/blob/master/src/set-branches
+               to set the branches.
 
 After deploy::
 
