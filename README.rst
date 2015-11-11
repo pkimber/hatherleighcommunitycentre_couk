@@ -6,11 +6,6 @@ hatherleighcommunitycentre.co.uk
                https://github.com/mdinsmore/dev-scripts/blob/master/src/set-branches
                to set the branches.
 
-After deploy::
-
-  django-admin.py migrate --noinput
-  django-admin.py init_app_compose
-
 Development
 ===========
 
