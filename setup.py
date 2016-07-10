@@ -47,7 +47,7 @@ setup(
             'templates/dash/*.*',
         ],
     },
-    version='0.0.17',
+    version='0.0.18',
     description='Hatherleigh Community Centre',
     author='Patrick Kimber',
     author_email='code@pkimber.net',
