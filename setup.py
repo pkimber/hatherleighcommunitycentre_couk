@@ -20,7 +20,7 @@ def get_readme():
 
 setup(
     name='kb-hatherleighcommunitycentre-couk',
-    packages=['project', 'project.management', 'project.management.commands', 'web', 'dash', 'settings'],
+    packages=['web', 'project', 'project.management', 'project.management.commands', 'dash', 'settings'],
     package_data={
         'project': [
             'static/*.*',
@@ -47,7 +47,7 @@ setup(
             'templates/dash/*.*',
         ],
     },
-    version='0.0.16',
+    version='0.0.17',
     description='Hatherleigh Community Centre',
     author='Patrick Kimber',
     author_email='code@pkimber.net',
