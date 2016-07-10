@@ -7,12 +7,7 @@
 -e ../../app/login
 -e ../../app/mail
 django-debug-toolbar
-fabric
 factory-boy
-gitpython
-hgapi
-ipdb
 pytest-django
 pytest-flakes
 pytest-pep8
-walkdir
